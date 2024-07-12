@@ -13,14 +13,11 @@ This repository is organized as follows:
 ## Supplementary files
 To ensure reproducibility, we provide the the data set for training and testing, and the trained model for validate the low-frequency extrapolation performance. 
 
-* **Training data set**
-Download the training data set [here](https://kaust.sharepoint.com/:f:/r/sites/M365_Deepwave_Documents/Shared%20Documents/Restricted%20Area/DW0027/dataset/train?csf=1&web=1&e=BWxDFb). Then, use `unzip` to extract the contents to `dataset/train`.
-
-* **Testing data set**
-Download the testing data set [here](https://kaust.sharepoint.com/:f:/r/sites/M365_Deepwave_Documents/Shared%20Documents/Restricted%20Area/DW0027/dataset/test?csf=1&web=1&e=bOl78N). Then, use `unzip` to extract the contents to `dataset/test`.
+* **Training and Testing data set**
+Download the training and testing data set [here](https://drive.google.com/file/d/1VXcms_hpkMde7k41iuODtF33pOwHaU6b/view?usp=drive_link). Then, use `unzip` to extract the contents to `dataset/train` and `dataset/test`.
 
 * **Trained model**
-Download the trained neural network model [here](https://kaust.sharepoint.com/:f:/r/sites/M365_Deepwave_Documents/Shared%20Documents/Restricted%20Area/DW0027?csf=1&web=1&e=MRsEhA). Then, extract the contents to `trained_checkpoints/`.
+Download the trained neural network model [here](https://drive.google.com/file/d/1tL1mvziKAhMVop3DNcQOvwRwft5rFdwt/view?usp=drive_link). Then, extract the contents to `trained_checkpoints/`.
 
 ## Getting started :space_invader: :robot:
 To ensure reproducibility of the results, we suggest using the `environment.yml` file when creating an environment.
