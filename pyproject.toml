@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ssl_lowfreq"
+authors = [
+    {name = "Shijun Cheng", email = "shijun.cheng@kaust.edu.sa"},
+]
+description = 'This research develops a self-supervised framework for neural network-based low-frequency extrapolation, which does not require labeled data enabling neural networks to be trained directly on real data. Hence, we effectively address the significant generalization gap often encountered by supervised learning techniques. Numerical examples show our framework effectively extrapolates low-frequency components, aiding in circumventing the challenges of cycle-skipping in full waveform inversion. Also, our method is robustness against noisy observed data by integrating a self-supervised denoiser.'
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["machine learning", "self-supervised learning", "low-frequency extrapolation"]
+license = {text = "BSD 3-Clause License"}
+classifiers = [
+        "Intended Audience :: Science/Research",
+        "Natural Language :: English",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Topic :: Scientific/Engineering :: Mathematics",
+    ]
+dependencies = [
+        "numpy >= 1.23.5",
+    ]
+
+dynamic = ["version"]
+
+[tool.setuptools.packages]
+find = {}

@@ -1,0 +1,45 @@
+# Training file folder
+dir_train: ../dataset/train/
+
+# Time interval of training data
+dt: !!float 2e-3
+
+# Frequency cutoff setting
+pad: 30
+# If data is synthetic data, we need define cutfreq (Hz) for raw data
+cutfreq_raw: [5, 15] 
+# Warmup phase
+cutfreq_warmup: [6, 30]
+# IDR phase
+cutfreq_idr: [5, 15]
+
+# Training mode
+train_mode: SSL   # option: SSL (self-supervised) and SL (supervised)
+
+# Training setting
+data_type: syn    # option: syn (synthetic) or field (field) data
+in_channels: 1
+out_channels: 1
+total_epoch: 600
+warmup_epoch: 50
+batch_size: 64
+num_workers: 1
+lr: !!float 2e-4
+loss_type: l1         # option: l1 and l2
+optimizer: AdamW      # option: AdamW and Adam
+wd: !!float 1e-4
+schedule: multistep   # option: cosine and multistep
+milestones: [50, 100, 150, 200, 250, 300]
+gamma: 0.8
+print_freq: 100       # iterations
+save_state_freq: 5    # epoch
+use_freqloss: True    # whether use frequency loss
+epsilon: 0.01
+
+# Testing file folder
+dir_test: ../dataset/test/
+
+# Test setting
+cutfreq_test: 10   # If data is synthetic data, we need define
+cp_list: [50, 100, 200]  # select trained model in which epoch
+
