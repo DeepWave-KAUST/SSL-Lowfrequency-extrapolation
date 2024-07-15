@@ -70,12 +70,13 @@ configurations may be required for different combinations of workstation and GPU
 ## Cite us 
 ```bibtex
 @article{cheng2024self,
-  title={A self-supervised learning framework for seismic low-frequency extrapolation}, 
-  doi={10.1029/2024JH000157},
+  title={A Self-Supervised Learning Framework for Seismic Low-Frequency Extrapolation},
   author={Cheng, Shijun and Wang, Yi and Zhang, Qingchen and Harsuko, Randy and Alkhalifah, Tariq},
   journal={Journal of Geophysical Research: Machine Learning and Computation},
+  volume={1},
+  number={3},
+  pages={e2024JH000157},
   year={2024},
   publisher={Wiley Online Library}
 }
-
 
